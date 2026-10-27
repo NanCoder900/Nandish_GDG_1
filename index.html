@@ -4,55 +4,153 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nandish Sarkar</title>
+	<meta name="description"
+		content="Nandish Sarkar, IT student at IIIT Allahabad, developer and competitive programmer.">
+	<title>Nandish Sarkar | Personal Portfolio</title>
+	<link rel="icon"
+		href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23015602%22/><text x=%2250%22 y=%2268%22 font-size=%2255%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22>NS</text></svg>">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode,light_mode" />
 </head>
 
 <body>
-	<header>
-		<div class="txt">
-			<h3>Hi, I am</h3>
-			<h1>Nandish Sarkar</h1>
-			<h3>IT Student @IIIT Allahabad | Developer | Competitive Programmer</h3>
+	<nav class="navbar" aria-label="Main">
+		<a href="#home" class="logo">NS<span>.</span></a>
 
-			<p>I build things that work and love understanding why. Currently exploring web development and competitive
-				programming.</p>
+		<div class="nav-links">
+			<a href="#about">About</a>
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</div>
 
-			<div class="btns">
-				<button class="btn">View My Work</button>
-				<button class="btn">Contact Me</button>
+		<button class="theme-btn" type="button" aria-label="Switch to dark mode">
+			<span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
+		</button>
+	</nav>
+
+	<main>
+		<header id="home">
+			<div class="txt">
+				<p class="hello">Hi, I am</p>
+				<h1>Nandish Sarkar</h1>
+				<p class="role">B.Tech IT @ IIITA | Developer | Competitive Programmer</p>
+
+				<p>IT undergraduate at IIIT Allahabad, from Kolkata, West Bengal. I enjoy building things with code,
+					solving
+					problems, and learning how technology works under the hood.</p>
+
+				<div class="btns">
+					<a href="#projects" class="btn">View My Work</a>
+					<a href="#contact" class="btn">Contact Me</a>
+				</div>
 			</div>
-		</div>
 
-		<div class="img">
-			<img src="" alt="Nandish Sarkar">
-		</div>
-	</header>
-
-	<section class="about">
-		<h1>About Me</h1>
-		<p>Hey, I’m Nandish, an IT student at IIIT Allahabad, originally from Kolkata, West Bengal. I’ve always enjoyed
-			exploring technology, solving problems, and figuring out how things work. I spend my time coding, practising
-			competitive programming, and building web projects.
-			I’m also interested in exploring new areas of computer science, from software development to cybersecurity.
-			I believe the best way to learn is by building things, making mistakes, and figuring out better ways to do
-			them. Outside of coding, I enjoy chess and discovering new ideas. I’m still learning, experimenting, and
-			looking for opportunities to build things that are both useful and interesting.</p>
-
-
-		<div class="skills">
-			<h3>Skills and Interests</h3>
-			<div class="tags">
-				<ul>
-					<li>C++</li>
-					<li>Web Dev</li>
-					<li>Problem Solving</li>
-					<li>Git</li>
-					<li>Python</li>
-					<li>Java</li>
-				</ul>
+			<div class="img">
+				<img src="./pfp.jpeg" alt="Photo of Nandish Sarkar" width="290" height="350">
 			</div>
-		</div>
-	</section>
+		</header>
+
+		<section class="about" id="about">
+			<h2>About Me</h2>
+			<p>Hey, I’m Nandish, an IT student at IIIT Allahabad, originally from Kolkata, West Bengal. I’ve always
+				enjoyed
+				exploring technology, solving problems, and figuring out how things work. I spend my time coding,
+				practising
+				competitive programming, and building web projects.</p>
+			<p id="more">I believe the best way to learn is by building things, making mistakes, and figuring out better
+				ways
+				to do them. Outside of coding, I enjoy chess and discovering new ideas. I’m still learning,
+				experimenting, and
+				looking for opportunities to build things that are both useful and interesting.</p>
+			<button class="link-btn" id="moreBtn" type="button" aria-expanded="false" aria-controls="more">Read
+				more</button>
+
+			<div class="skills" id="skills">
+				<h2>Skills and Interests</h2>
+				<div class="cards">
+					<div class="card">
+						<h3>Languages</h3>
+						<p>The building blocks I use to think and make.</p>
+						<div class="tags">
+							<span class="tag">C</span>
+							<span class="tag">C++</span>
+							<span class="tag">Java</span>
+							<span class="tag">Python</span>
+						</div>
+					</div>
+					<div class="card">
+						<h3>Web Development</h3>
+						<p>Turning interfaces and ideas into real experiences.</p>
+						<div class="tags">
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+							<span class="tag">JavaScript</span>
+							<span class="tag">React</span>
+						</div>
+					</div>
+					<div class="card">
+						<h3>Tools &amp; Data</h3>
+						<p>Keeping projects organised and connected.</p>
+						<div class="tags">
+							<span class="tag">Git</span>
+							<span class="tag">GitHub</span>
+							<span class="tag">SQL</span>
+							<span class="tag">Firebase</span>
+						</div>
+					</div>
+					<div class="card">
+						<h3>Exploring Now</h3>
+						<p>Areas I’m actively working to get better at.</p>
+						<div class="tags">
+							<span class="tag">Competitive Programming</span>
+							<span class="tag">Designing</span>
+							<span class="tag">AI/ML</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects" id="projects">
+			<h2>Things I have made</h2>
+			<div class="cards">
+				<div class="card">
+					<h3>The Writers Department</h3>
+					<p>A writing-focused platform built to give writers a dedicated space to create and share their
+						work.</p>
+					<a href="https://the-writers-department.netlify.app/" target="_blank" rel="noopener noreferrer"
+						aria-label="Visit The Writers Department site">Visit Site</a>
+				</div>
+				<div class="card">
+					<h3>Bhodrolok</h3>
+					<p>Built the frontend for a business store’s website.</p>
+					<a href="https://bhodrolok.in/" target="_blank" rel="noopener noreferrer"
+						aria-label="Visit the Bhodrolok site">Visit Site</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<h2>Get in touch</h2>
+			<div class="socials">
+				<a href="mailto:nandishnana@gmail.com">EMAIL</a>
+				<a href="https://github.com/nancoder900" target="_blank" rel="noopener noreferrer">GITHUB</a>
+				<a href="https://www.linkedin.com/in/nandish-sarkar-6376053b3" target="_blank"
+					rel="noopener noreferrer">LINKEDIN</a>
+				<a href="https://codeforces.com/profile/nancoder900" target="_blank"
+					rel="noopener noreferrer">CODEFORCES</a>
+				<a href="https://www.codechef.com/users/nancoder900" target="_blank"
+					rel="noopener noreferrer">CODECHEF</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="foot">© 2026 Nandish Sarkar | Built for GDG Weekly Challenge, Week 1</footer>
+
+	<script src="script.js"></script>
 </body>
 
 </html>
